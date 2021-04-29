@@ -1,6 +1,7 @@
 *** Settings ***
 
 Resource                      ../../Keywords/UI/login.robot
+Resource                      ../../Keywords/UI/base.robot
 Force Tags                    login
 
 

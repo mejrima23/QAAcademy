@@ -1,0 +1,14 @@
+Changing B&B information
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Branding - Branding page is loaded.
+3.Change B&B name - Name is successfully changed.
+4.Change B&B logo - Logo is successfully changed.
+5.Change B&B description - Description is successfully changed.
+6.Change map latitude - Latitude is successfully changed.
+7.Change map longitude - Longitude is successfully changed.
+8.Change contact name - Name is successfully changed.
+9.Change contact address - Address is successfully changed.
+10.Change contact phone - Phone is successfully changed.
+11.Change contact email - Email is successfully changed.
+12.Click on Submit button - Button is clicked.
+13.Validation message - Branding updated!

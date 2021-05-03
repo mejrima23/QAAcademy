@@ -1,0 +1,7 @@
+Login as Admin
+1.Open Chrome Browser  -  The browser is open.
+2.Go to URL= https://automationintesting.online/#/admin/
+3.Input "admin" in username field  -  Username is filled.
+4.Input "password" in password field  -  Password is filled.
+5.Click on Login button  -  Admin is successfully logged in.
+6.Close browser.

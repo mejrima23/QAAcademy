@@ -1,0 +1,10 @@
+Create new room
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Rooms - Rooms page is loaded.
+3.Input Room number - Room number is successfully filed.
+4.Select Type  - Type is successfully selected.
+5.Select Accessible  - Accessible is successfully selected.
+6.Input Price - Price is successfully filed.
+7.Select Room details - Details are successfully selected.
+8.Click on Create button - Button is successfully clicked.
+9.Validation - The room you created is in the room list.

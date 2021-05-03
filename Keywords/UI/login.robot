@@ -1,8 +1,6 @@
 *** Settings ***
 
 Library                    ExtendedSelenium2Library
-Variables                  ../../variables.py
-
 
 *** Variables ***
 ${IN_USERNAME}            id=username
@@ -14,11 +12,6 @@ ${PASSWORD}               password
 
 
 *** Keywords ***
-
-Open Browser as Admin
-    [Documentation]               Opens browser to login page
-    open browser      ${URL}      browser=${BROWSER}
-    maximize browser window
 
 Input username:
     [Documentation]               Inputs username

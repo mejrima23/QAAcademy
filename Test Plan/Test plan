@@ -1,0 +1,107 @@
+Test Plan
+Shady Meadows B&B - Restful Booker Platform
+Version 1.0
+Created: 20/05/2021
+Last Updated: 29/05/2021
+Author: Mejrima Icanovic
+
+
+
+1.	INTRODUCTION
+1.1.Purpouse
+This test plan describes the testing approach and overall framework that will drive the testing of the
+Shady Meadows B&B Restful-booker-platform Version 1.3
+The document introduces:
+•	Test Strategy: rules the test will be based on, including the givens of the project (e.g.: start / end dates,
+objectives,assumptions); description of the process to set up a valid test (e.g.: entry / exit criteria, creation of
+ test cases, specific tasks to perform).
+•	Execution Strategy: describes how the test will be performed and process to identify and report defects,
+ and to fix and implement fixes.
+
+1.2.Project Overview
+Shady Meadows B&B is an application for booking a room with breakfast. The application is available in online and admin
+ versions. The online application offers the possibility of booking rooms, with different specifications in a certain
+ period of time. You can also contact the owner for additional questions. Below is a map in which the location of the
+ Shady Meadows B&B is entered.
+The admin version has more features. You have the option to create additional rooms, to change basic information and
+details about the Shady Meadows B&B, you also have access to reservations, and to view reservations in the calendar.
+
+2.TEST STRATEGY
+2.1.Test Objectives
+The objective of the test is to verify that the functionality of  Shady Meadows B&B - Restful Booker Platform
+Version 1.3 works according to the specifications.
+The test will execute and verify the test scripts, identify all high and medium severity defects per the entrance
+criteria, prioritize lower severity defects.
+The final product of the test is :
+•	A set of stable test scripts that can be reused for Functional and UAT test execution.
+
+2.2. Levels of Testing
+2.2.1.	Exploratory
+PURPOSE: the purpose of this test is to make sure critical defects are removed before the next levels of testing can
+start.
+SCOPE:  First level navigation, dealer and admin modules
+METHOD: this exploratory testing is carried out in the application without any test scripts and documentation.
+
+2.2.2.	Functional Test
+PURPOSE:  Functional testing will be performed to check the functions of application. The functional testing is carried
+out by feeding the input and validates the output from the application.
+
+2.2.3. API
+PURPOSE: Test the APIs create for the software under tested.
+
+2.3.Scope of testing
+2.3.1. Feature to be tested
+
+BOOKING ROOMS
+The user can book a room at different times.
+The admin can review bookings.
+
+CONTACTING THE OWNER
+The user can write private messages to the owner.
+The admin can view and open messages from the user.
+
+CREATING A NEW ROOM
+The admin can create a new room, with different specifications.
+In the online version we can view the created rooms.
+
+BRANDING
+The admin has permission to change the basic information about the Shady Meadows B&B
+The user will see these changes on the home page.
+
+2.3.2.Feature not to be tested
+These feature are not be tested
+- Hardware Interfaces
+- Software Interfaces
+- Database logical
+- Website Security and Performance
+
+3. EXECUTION STRATEGY
+3.1. Entry and Exit Criteria
+•	The entry criteria refer to the desirable conditions in order to start test execution.
+•	The exit criteria are the desirable conditions that need to be met in order proceed with the implementation.
+•	Entry and exit criteria are flexible benchmarks. If they are not met, the test team will assess the risk, identify
+ mitigation actions and provide a recommendation.
+•	Entry criteria to start the execution phase of the test: the activities listed in the Test Planning section of the
+ schedule are 100% completed.
+•	Entry criteria to start each cycle: the activities listed in the Test Execution section of the schedule are
+ 100% completed at each cycle.
+
+4.DEFECTS
+Critical
+•	This bug is critical enough to crash the system, cause file corruption, or cause potential data loss
+•	It causes an abnormal return to the operating system (crash or a system failure message appears).
+•	It causes the application to hang and requires re-booting the system.
+High
+•	It causes a lack of vital program functionality with workaround
+Medium
+•	This Bug will degrade the quality of the System.  However there is an intelligent workaround for achieving the
+ desired functionality - for example through another screen.
+•	This bug prevents other areas of the product from being tested. However other areas can be independently tested.
+Low
+•	There is an insufficient or unclear error message, which has minimum impact on product use.
+Cosmetical
+•	There is an insufficient or unclear error message that has no impact on product use.
+
+TEST ENVIRONMENT
+Shady Meadows B&B - Restful Booker Platform Version 1.3
+A windows environment with Version 89.0.4389.128 (Official Build) (64-bit) and later should be available.

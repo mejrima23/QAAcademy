@@ -1,0 +1,287 @@
+TEST CASES
+Pre-conditions:
+1.Open browser
+2.In incognito window enter URL: https://automationintesting.online/#/admin
+
+Test Case ID: LOGIN_01
+Positive/Negative: POSITIVE test case (SMOKE)
+Test Description: LOGIN WITH VALID CREDENTIALS
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+
+1.Input Username
+2.Input Password
+3.Click on Login button
+
+Expected Results: The user is logged to the account.
+Actual Results: As Expected
+
+
+Test Case ID: LOGIN_02
+Positive/Negative: NEGATIVE test case
+Test Description: LOGIN WITH PRESS ON ENTER INSTEAD OF LOGIN BUTTON
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+
+1.Input Username
+2.Input Password
+3.Press ENTER
+
+Expected Results: The user is not in their account, but there is no validation message
+Actual Results: As Expected
+
+
+Test Case ID: LOGIN_03
+Positive/Negative: NEGATIVE test case
+Test Description: LOGIN WITH INVALID CREDENTIALS
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin1
+Password: password1
+
+1.Input Username
+2.Input Password
+3.Click on Login button.
+
+Expected Results: The user is not in their account, but there is no validation message
+Actual Results: As Expected
+
+
+Test Case ID: LOGIN_04
+Positive/Negative: POSITIVE test case
+Test Description: LOGOUT AFTER SUCCESSFUL LOGIN
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+
+1.Input Username
+2.Input Password
+3.Click on Login button.
+4.Admin page is loaded. Click on Logout
+
+Expected Results: The user has successfully logged out and it is again on the login page
+Actual Results: As Expected
+
+Test Case ID: ROOM_01
+Positive/Negative: POSITIVE test case
+Test Description: CREATING NEW ROOM
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+Room: 001
+Type: Single
+Accessible: true
+Price:100
+
+1.Log in to admin account.
+2.Navigate to Rooms.
+3.Enter the required details and select all the checkboxes in the Room details.
+4.Click on Create button.
+
+Expected Results: A new room has been created and is on the list of rooms.
+Actual Results: As Expected
+
+Test Case ID: ROOM_02
+Positive/Negative: NEGATIVE test case
+Test Description: CREATING NEW ROOM WITH EMPTY FIELDS
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+
+1.Log in to admin account.
+2.Navigate to Rooms.
+3.Leave all fields blank
+4.Click on Create button.
+
+Expected Results: Validation message: must be greater than or equal to 1. (Room number is mandatory field.)
+Actual Results: As Expected
+
+Test Case ID: ROOM_03
+Positive/Negative: POSITIVE test case
+Test Description: ADDING DESCRIPTION OF AN EXISTING ROOM
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+
+1.Log in to admin account.
+2.Navigate to Rooms.
+3.Create new room.
+4.Click on the room you just created.
+5.Click on Edit button in right upper corner.
+6.In Description field add description you want (e.g. This is description)
+7.Click on Update button
+
+Expected Results: Room description successfully added.
+Actual Results: As Expected
+
+Test Case ID: ROOM_04
+Positive/Negative: POSITIVE test case
+Test Description: CHANGING A PICTURE OF A ROOM
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+
+Image: https://tpc.googlesyndication.com/simgad/9256065552207870863
+1.Log in to admin account.
+2.Navigate to Rooms.
+3.Create new room.
+4.Click on the room you just created.
+5.Click on Edit button in right upper corner.
+6.In Image field add URL: https://tpc.googlesyndication.com/simgad/9256065552207870863
+7.Click on Update button
+
+Expected Results: Room image successfully edited.
+Actual Results: As Expected
+
+Test Case ID: ROOM_05
+Positive/Negative: POSITIVE test case
+Test Description: CREATING A NEW ROOM WITH AN ALREADY EXISTING ROOM NUMBER
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+Room: 001
+
+1.Log in to admin account.
+2.Navigate to Rooms.
+3.Enter the required details and select all the checkboxes in the Room details.
+4.Click on Create button.
+5.Again create new room with same room number.
+6.Click on Create button
+
+Expected Results: Both rooms are created although they have the same room number.
+Actual Results: As Expected
+
+Test Case ID: BRANDING_01
+Positive/Negative: NEGATIVE test case
+Test Description: DELETE ALL INFORMATION AND DETAILS ABOUT B&B
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+
+1.Log in to admin account.
+2.Navigate to Branding.
+3.Delete all info and details.
+4.Click on Submit button.
+
+Expected Results: Validation message: Information on how we should fill in the fields.
+Actual Results: As Expected
+
+Test Case ID: BRANDING_02
+Positive/Negative: NEGATIVE test case
+Test Description: CHANGE ALL INFORMATIONS AND DETAILS ABOUT B&B
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+Name: hotel HILLS HOTEL
+Logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMZ9dbmJAzbub7jnuDgZBZPQ32RzacLmx4g&usqp=CAU
+Description: This is description This is description
+Latitude: 43.856430000
+Longitude: 18.4130290000
+Name: John John John
+Phone: 033 947-94723
+Email: hotelhills@gmail.com.test
+
+1.Log in to admin account.
+2.Navigate to Branding.
+3.Delete everything and then fill in the fields with the information we provided.
+4.Click on Submit button.
+
+Expected Results: Validation message: must be greater than or equal to 11.
+Actual Results: As Expected
+
+Test Case ID: FrontPage_01
+Positive/Negative: POSITIVE test case
+Test Description: BOOKING THE ROOM
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+Name: Jane
+Lastname: Doe
+Email: janedoe@test.com
+Phone: 12345678909
+
+1.Log in to admin account.
+2.Navigate to Front Page.
+3.There is a list of rooms. Click on Book this room.
+4.Choose date. Drag the mouse over the check-in date to the check-out date.
+ Date must be current (eg May 10 to May 15)
+5.Input your Name, Lastname, email and phone.
+4.Click on Book button.
+
+Expected Results: Validation message: Booking Successful!
+Actual Results: As Expected
+
+Test Case ID: FrontPage_02
+Positive/Negative: NEGATIVE test case
+Test Description: BOOKING AN ALREADY RESERVED ROOM
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+Name: Jane
+Lastname: Doe
+Email: janedoe@test.com
+Phone: 12345678909
+
+1.Log in to admin account.
+2.Navigate to Front Page.
+3.There is a list of rooms. Click on Book this room.
+4.Choose date. Drag the mouse over the check-in date to the check-out date. Date must be current (eg May 10 to May 15)
+5.Input your Name, Lastname, email and phone.
+6.Click on Book button.
+7.Validation message: Booking Successful!
+8.Again book the same room you already booked. And choose same date.
+9.Click on Book button.
+
+Expected Results: Validation message: The room dates are either invalid or are already booked for one or more of
+the dates that you have selected.
+Actual Results: As Expected
+
+Test Case ID: FrontPage_03
+Positive/Negative: NEGATIVE test case
+Test Description: BOOKING A ROOM FOR A DATE IN THE PAST
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+Username: admin
+Password: password
+Name: Jane
+Lastname: Doe
+Email: janedoe@test.com
+Phone: 12345678909
+
+1.Log in to admin account.
+2.Navigate to Front Page.
+3.There is a list of rooms. Click on Book this room.
+4.Choose date. Drag the mouse over the check-in date to the check-out date. Date: May 01 to May 05
+5.Input your Name, Lastname, email and phone.
+4.Click on Book button.
+
+Expected Results: Validation message: Booking Successful!
+Actual Results: As Expected

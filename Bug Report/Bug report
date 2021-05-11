@@ -1,0 +1,244 @@
+
+BUG REPORT FOR Shady Meadows B&B- Restful-booker platform APPLICATION
+REPORTED BY: Mejrima Icanovic
+PRE-CONDIOTIONS:
+•	Open browser
+•	Go to URL: https://automationintesting.online/#/admin
+•	Sign in with valid credentials
+ID number                    01
+TITLE                        Blank Page after using letters instead of numbers
+Submit Date                  05/May/2021
+URL                          https://automationintesting.online/#/admin
+Platform                     Windows
+Operating System             Windows 10 Pro
+Browser                      Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                     Critical
+Priority                     High
+Description
+If we create a new room as an admin and enter the letters instead of the room number, a blank page will appear.
+Steps to reproduce
+1)	After you have successfully logged in to the application, in Room # field input: abc
+2)	Click “Create” button.
+Expected result:
+Validation message: You must enter a number instead of a letters.
+Actual result:
+Blank Page
+
+
+ID number                   02      (T.CASE LOGIN_03)
+TITLE                       There is no validation message.
+Submit Date                 05/May/2021
+URL                         https://automationintesting.online/#/admin
+Platform                    Windows
+Operating System            Windows 10 Pro
+Browser                     Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                    Medium
+Priority                    Medium
+Description
+If we enter the wrong credentials for login, we have no information if we made a mistake, simply nothing happens.
+Steps to reproduce
+1)	Input username: Admin
+2)	Input password: password
+3)	Click “Login” button.
+Expected result:
+Validation message: You entered invalid credentials.
+Actual result:
+Nothing happens.
+
+
+ID number                   03     (T.CASE LOGIN_02)
+TITLE                       LOGIN button.
+Submit Date                 05/May/2021
+URL                         https://automationintesting.online/#/admin
+Platform                    Windows
+Operating System            Windows 10 Pro
+Browser                     Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                    Low/Cosmetic
+Priority                    Low
+Description
+The Login button is not fully visible.
+Steps to reproduce
+1)	Open login page.
+Expected result:
+Each part of the page must be fully visible on the screen.
+Actual result:
+The Login button is not fully visible.
+(In addition, it is not possible to log in to the page by pressing the ENTER key, which should be enabled)
+
+
+ID number                   04       (T. CASE FRONT PAGE_03)
+TITLE                       We can book a date that is in the past.
+Submit Date                 05/May/2021
+URL                         https://automationintesting.online/#/
+Platform                    Windows
+Operating System            Windows 10 Pro
+Browser                     Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                    Medium
+Priority                    High
+Description
+When we book a room we can choose a date that is in the past.
+Steps to reproduce
+1)	Choose room and click on Book this room button
+2)	Select a date to book (date must be in the past)
+3)	Input your information on the right side.
+4)	Click Book.
+Expected result:
+Validation message: You cannot book that date.
+Actual result:
+Validation message: Booking Successful!
+( The option to reserve before the current date should be removed. )
+
+
+ID number                   05
+TITLE                       Phone number
+Submit Date                 08/May/2021
+URL                         https://automationintesting.online/#/admin
+Platform                    Windows
+Operating System            Windows 10 Pro
+Browser                     Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                    Medium
+Priority                    Low
+Description
+The Phone number field cannot receive more than 16 numbers.
+Steps to reproduce
+1) Navigate to Branding
+2) Input Name: hotel HILLS HOTEL
+3) Input Logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMZ9dbmJAzbub7jnuDgZBZPQ32RzacLmx4g&usqp=CAU
+4) Input Description: This is description This is description
+5) Input Latitude: 43.856430000
+6) InputLongitude: 18.4130290000
+7) Input Name: John John John
+8) Input Phone: 123456789098765
+9) Input Email: hotelhills@gmail.com.test
+10)	Click Submit button
+13)	In phone field input this number: 1234567891234567.
+14) Click Submit button
+
+Expected result:
+Validation message: Branding updated, or Validation message: You can enter 16 or less digits in the Phone number field
+Actual result:
+Nothing happens. There is no information why we can't update branding.
+
+ID number                   06       (T.CASE BRANDING_02)
+TITLE                       The phone number field does not recognize spaces.
+Submit Date                 08/May/2021
+URL                         https://automationintesting.online/#/admin
+Platform                    Windows
+Operating System            Windows 10 Pro
+Browser                     Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                    Medium
+Priority                    Medium
+Description
+The phone number field does not recognize spaces, but we have no information about it.
+
+Steps to reproduce
+1) Navigate to Branding
+2) Input Name: hotel HILLS HOTEL
+3) Input Logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMZ9dbmJAzbub7jnuDgZBZPQ32RzacLmx4g&usqp=CAU
+4) Input Description: This is description This is description
+5) Input Latitude: 43.856430000
+6) InputLongitude: 18.4130290000
+7) Input Name: John John John
+8) Input Phone: 123456789098765
+9) Input Email: hotelhills@gmail.com.test
+10)	Click Submit button
+13)	In phone field input this number: 123 123 123 123.
+14) Click Submit button
+
+Expected result:
+Validation message: Branding updated, or Validation message: Enter the phone number without spaces
+Actual result:
+Validation message: must be greater than or equal to 11
+
+NOW WE HAVE INFORMED THAT WE MUST ENTER 11 OR MORE DIGITS IN THE PHONE NUMBER FIELD.
+
+ID number                   07
+TITLE                       The phone number can be less than 11
+Submit Date                 09/May/2021
+URL                         https://automationintesting.online/#/admin
+Platform                    Windows
+Operating System            Windows 10 Pro
+Browser                     Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                    Medium
+Priority                    Medium
+Description
+The phone number can be less than 11, although the condition is that the number is equal to
+or greater than 11.
+
+Steps to reproduce
+1) Fill in all the branding information.
+2) In phone field input this number: 12345.
+3) Click Submit button
+Expected result:
+Validation message: must be greater than or equal to 11
+Actual result:
+Validation message: Branding updated.
+
+ID number                   08
+TITLE                       The map is useless.
+Submit Date                 09/May/2021
+URL                         https://automationintesting.online/#/
+Platform                    Windows
+Operating System            Windows 10 Pro
+Browser                     Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                    Cosmetic
+Priority                    Low
+Description
+The map is useless. We cannot orient ourselves towards it, as it only shows the locations of the accommodation.
+We do not have the option to zoom in, out, or move away from the location.
+Steps to reproduce
+1) Scroll down for map.
+Expected result:
+Validation message: must be greater than or equal to 11
+Actual result:
+Validation message: Branding updated.
+
+
+ID number                   09
+TITLE                       Contact owner without message.
+Submit Date                 09/May/2021
+URL                         https://automationintesting.online/#/
+Platform                    Windows
+Operating System            Windows 10 Pro
+Browser                     Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                    Medium
+Priority                    High
+Description
+Unclear instructions in the validation message if we do not enter a message for the owner.
+Steps to reproduce
+1) Scroll down for contacting owner.
+2) Input name: John Doe
+3) Input email: fakeemail@gmail.com
+4) Input phone: 123456789
+5) Input subject: This is subject.
+6) Click on Submit button.
+Expected result:
+Validation message: There is no message.
+Actual result:
+Validation message: must not be blank ( 3x)
+                    size must be between 20 and 2000
+( A validation message tells us that we left 3 fields blank, even though we didn't just enter a message.)
+
+
+ID number                   10     (T.CASE CONTACT_OWNER_02)
+TITLE                       Blank fields for contacting owner.
+Submit Date                 09/May/2021
+URL                         https://automationintesting.online/#/
+Platform                    Windows
+Operating System            Windows 10 Pro
+Browser                     Chrome 89.0.4389.114 (Official Build) (64-bit)
+Severity                    Medium
+Priority                    High
+Description
+Unclear instructions in the validation message if we try to  contact owner and don't fill any field.
+Steps to reproduce
+1) Scroll down for contacting owner.
+2) Click on Submit button.
+Expected result:
+Instructions how to fill fields.
+Actual result:
+Validation message:
+( Unclear instructions in the validation message about size of inputs, and which field is mandatory and which is not.)
+Note: The icon for the email and the subject are identical, they should be different)
+
+

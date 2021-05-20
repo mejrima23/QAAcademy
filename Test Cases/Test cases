@@ -285,3 +285,44 @@ Phone: 12345678909
 
 Expected Results: Validation message: Booking Successful!
 Actual Results: As Expected
+
+Test Case ID: CONTACT_OWNER_01
+Positive/Negative: POSITIVE test case
+Test Description: SENDING A MESSAGE TO OWNER
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+URL: https://automationintesting.online/#/
+Name:John Doe
+Email:johndoe@gmail.test
+Phone: 123456789
+Subject: subject
+Message: This is message for owner.
+
+1.Scroll down for contact message.
+2.Input name.
+3.Input email.
+4.Input phone.
+5.Input subject.
+6.Input message.
+7.Click Submit button.
+
+Expected Results: Validation message: Thanks for getting in touch John Doe!
+                                      We'll get back to you about!
+Actual Results: As Expected
+
+
+Test Case ID: CONTACT_OWNER_02
+Positive/Negative: NEGATIVE test case
+Test Description: SENDING A MESSAGE TO OWNER (blank fields)
+Test Case (Pass/Fail/Not Executed): PASS
+
+TEST DATA:
+URL: https://automationintesting.online/#/
+
+1.Scroll down for contact message.
+2.Click Submit button.
+
+Expected Results: Validation message about blank inputs.
+Actual Results: As Expected
+

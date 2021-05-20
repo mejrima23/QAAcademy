@@ -1,0 +1,41 @@
+Verify sending a message
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Front Page - Front page is loaded.
+3.Scroll down to message.
+4.Input name - Name is successfully filled.
+5.Input email - Email is successfully filled.
+6.Input phone - Phone is successfully filled.
+7.Input subject - Subject is successfully filled.
+8.Input message - Message is successfully filled.
+9.Click Submit button.
+10.Validation message: Thanks for getting in touch ${NAME}!
+
+Verify sending a message - blank fields.
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Front Page - Front page is loaded.
+3.Scroll down to message.
+4.Click Submit button.
+5.Validation message: (Instructions on how to send the message.)
+
+Verify sending a message - only numbers.
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Front Page - Front page is loaded.
+3.Scroll down to message.
+4.Input name: 11111111111 - Name is successfully filled.
+5.Input email: 11111111111@11111111 - Email is successfully filled.
+6.Input phone: 11111111111 - Phone is successfully filled.
+7.Input subject: 111111111 - Subject is successfully filled.
+8.Input message: 1111111111111111111 - Message is successfully filled.
+9.Click Submit button.
+10.Validation message: Thanks for getting in touch ${NAME}!
+
+Verify sending a message - without message.
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Front Page - Front page is loaded.
+3.Scroll down to message.
+4.Input name - Name is successfully filled.
+5.Input email - Email is successfully filled.
+6.Input phone - Phone is successfully filled.
+7.Input subject - Subject is successfully filled.
+9.Click Submit button.
+10.Validation message: (Instructions on how about blank field.)

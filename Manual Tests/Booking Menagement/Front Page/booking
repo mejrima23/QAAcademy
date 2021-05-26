@@ -1,0 +1,48 @@
+Verify booking a room
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Front Page - Front page is loaded.
+3.Scroll down and click on Book this room button.
+4.Select date for booking with mouse.
+5.Input firstname - Firstname is successfully filled.
+6.Input lastname - Lastname is successfully filled.
+7.Input email - Email is successfully filled.
+8.Input phone - Phone is successfully filled.
+9.Click Book button.
+10.Validation message: Booking Successful!
+
+Verify booking a room - unavailable date
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Front Page - Front page is loaded.
+3.Scroll down and click on Book this room button.
+4.Select date for booking with mouse.
+5.Input firstname - Firstname is successfully filled.
+6.Input lastname - Lastname is successfully filled.
+7.Input email - Email is successfully filled.
+8.Input phone - Phone is successfully filled.
+9.Click Book button.
+10.Validation message: Booking Successful!
+11.Again book the same room and choose same date.
+12.Fill other information.
+13.Click Book button.
+14.Validation message:The room dates are either invalid or are already booked for one or more of the dates that you have
+ selected.
+
+Verify booking a room - without personal information
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Front Page - Front page is loaded.
+3.Scroll down and click on Book this room button.
+4.Select date for booking with mouse.
+5.Click Book button.
+6.Validation message: Instructions how to fill blank fields.
+
+Verify booking a room - without date
+1.Open browser and login as Admin - Admin is successfully logged in.
+2.Navigate to Front Page - Front page is loaded.
+3.Scroll down and click on Book this room button.
+4.Input firstname - Firstname is successfully filled.
+5.Input lastname - Lastname is successfully filled.
+6.Input email - Email is successfully filled.
+7.Input phone - Phone is successfully filled.
+8.Click Book button.
+10.Validation message: must not be null
+                       must not be null
